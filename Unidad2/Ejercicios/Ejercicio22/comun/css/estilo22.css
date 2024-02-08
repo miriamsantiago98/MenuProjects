@@ -1,0 +1,56 @@
+
+body {
+	font: 100% sans-serif; 
+	font-size: 1.1em;
+	background: #1C2833;
+}
+
+p{	width: 700px;
+text-align: center;	
+color: #FBFCFC;
+
+}
+
+table {
+	border-collapse: collapse;
+	box-shadow: 3px 3px 7px ;
+}
+
+caption {
+	color: #99A3A4 ;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: 0 0 .5em;
+	text-shadow: 1px 1px 1px #c0e0f2;
+}
+
+td,
+th {
+	font-size: .8125em;
+	border: 1px solid #000;
+	padding: .5em 2.5em;	
+}
+
+th {
+	background: #F4D03F ; 
+	color: #fff;
+}
+
+td {
+	background: #FFFFF0; 
+	text-align: center;
+	width: auto;
+}
+
+.menor td {
+
+ background-color: #CD6155 ;
+	
+}
+
+.mayor td { 
+	background-color: #AF7AC5;
+	
+}
+
+/* NOTA: si lo deseas, puedes cambiar los estilos de la tabla a tu gusto */

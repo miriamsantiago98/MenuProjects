@@ -1,0 +1,43 @@
+
+body {
+	font: 100% sans-serif; 
+	font-size: 1.1em;
+	background: #17202A ;
+}
+
+p {	width: 80%;	
+    color: #fff;
+}
+
+table {
+	border-collapse: collapse;
+	box-shadow: 3px 3px 7px #336699;
+}
+
+caption {
+	color: #CD6155;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: 0 0 .5em;
+	text-shadow: 1px 1px 1px #CCE3FF;
+}
+
+td,
+th {
+	font-size: .8125em;
+	border: 1px solid #000;
+	padding: .5em 1.5em;	
+}
+
+th {
+	background: #922B21 ; 
+	color: #fff;
+}
+
+td {
+	background: #EEEEEE; 
+	text-align: center;
+	width: auto;
+}
+
+

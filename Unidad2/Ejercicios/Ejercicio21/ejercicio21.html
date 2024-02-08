@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cálculo de devolución</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="comun/css/estilos.css" />
+</head>
+<body>
+<table>
+	<caption>Cálculo de devolución</caption>
+	<tr>
+		<th colspan="2">Compras</th>
+	</tr>
+	<tbody> <!-- cuerpo de la tabla -->
+		
+		<tr>
+			<th>Precio</th>
+			<td><script type="text/javascript">
+				var compra = Number(prompt("Introduce el precio"))
+				document.write(compra)
+			</script>
+			 </td>
+		</tr>
+		<tr>
+			<th>Pago</th>
+			<td>
+				<script type="text/javascript">
+				var pago =Number(prompt("Introduce el pago"))
+				document.write(pago)
+			</script>
+			</td>
+		</tr>
+		<tr>
+			<th>Cambio</th>
+			<td ><script type="text/javascript">
+				devolucion = pago-compra
+				document.write(devolucion)
+			</script></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<script type="text/javascript">
+			var devolver = Math.trunc(devolucion/100)
+			document.write(devolver+' de $100 <br>');
+
+			var devol = devolver*100;
+			var resto= devolucion-devol
+
+			var resto1 = Math.trunc(resto/50)
+			document.write(resto1+' de $50 <br>');
+
+			var devol1 = resto1*50;
+			var rest = resto-devol1;
+
+			var resto2 = Math.trunc(rest/20)
+			document.write(resto2 +' de $20 <br>');
+
+			var devol2 = resto2*20
+			var rest1 = rest - devol2;
+
+			var resto3 = Math.trunc(rest1/10)
+			document.write(resto3 +' de $10 <br>');
+
+			var devol3 = resto3 * 10 
+			var rest2 = rest1 - devol3
+
+			var resto4 = Math.trunc(rest2/5)
+			document.write(resto4 +' de $5 <br>');
+
+			var devol4 = resto4 * 5
+			var rest3 = rest2 - devol4; 
+
+			var resto5 = Math.trunc(rest3/2)
+			document.write(resto5 +' de $2 <br>');
+
+			var devol5 = resto5*2
+			var rest4 = rest3 - devol5
+
+			var resto6 = Math.trunc(rest4/1)
+			document.write(resto6 +' de $1');
+
+
+
+ 
+
+		</script>
+				
+			</td>
+		</tr>
+
+	</tbody>	
+</table>
+</body>
+</html>

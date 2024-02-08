@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery-formulario</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--script src="../jquery-3.2.1.min.js"></script-->
+	<script>
+	//Carga del documento HTML
+	$(document).ready(function(){
+		$('input').css('border-color','navy');
+		$('input').css('border-width','thin');
+	});
+	</script>
+</head>
+<body>
+	<p>Nombre: 		<input type="text" name="nombre"></p>
+	<p>Ap. Paterno: <input type="text" name="apaterno"></p>
+	<p>Ap. Materno: <input type="text" name="amaterno"></p>
+	<p>Correo: 		<input type="text" name="email"></p>
+	<p><input type="submit" name="Enviar"></p>
+
+<script>
+	// Evento focus para input del tipo 'text'
+
+	$('input:text').focus(function(){
+		$(this).css('background-color','#e6f2ff');
+		$(this).css('border-color', '#00264d');
+	});
+	// Evento bluer para input del tipo 'text'
+
+	$('input:text').blur(function(){
+		$(this).css('background-color','#ffffff');
+		$(this).css('border-color', 'gray');
+		$(this).css('border-width', 'thin');
+
+	});
+	
+</script>
+</body>
+</html>

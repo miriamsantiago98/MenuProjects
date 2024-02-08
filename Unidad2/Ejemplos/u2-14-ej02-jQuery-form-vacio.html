@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>jQuery-formulario</title>
+	<meta charset="utf-8">
+	<script src="../jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<form>
+	<p>Tipo: 
+	<select name="choose">
+		<option value="macho">Cachorro</option>
+	  	<option value="hembra">Cachorra</option>
+	</select></p>
+	<p>	<input type="radio" name="species" value="perro">Perro</input>
+		<input type="radio" name="species" value="gato">Gato</input>
+		<input type="radio" name="species" value="gato montés">Gato Montés</input></p>
+	<p>	<input type="checkbox" value="alegre">Alegre</input>
+		<input type="checkbox" value="bonito">Bonito</input>
+		<input type="checkbox" value="inteligente">Inteligente</input></p>
+</form>
+
+	<p>Me gustaría comprar un nuevo 
+		<span id="speciesSpan">animal</span>
+		<span id="featureSpan"></span> 
+   	   	pero que sea <span id="genderSpan"></span>.</p>
+
+<script>
+ 
+    // Comportamiento de la lista desplegable
+
+    $("select[name='choose']").change(function() {
+		$('#genderSpan').html($(this).val());
+	});
+
+    // Comportamiento de los radio botones
+
+   $("input:radio[name='species']").change(function(){
+		if($(this).prop('checked')){
+			$('#speciesSpan').html($(this).val());
+		}
+	});
+    
+	// Comportamiento de los checkbox
+	var allChecked = [];	//arreglo de las características
+	$('input:checkbox').change(function() {
+		var value = $(this).val();
+		if($(this).prop('checked'))
+		allChecked.push(value);
+		else{
+			var index = allChecked.indexOf(value);
+			if(index != -1)
+			allChecked.splice(index, 1);
+		}
+
+		$('#featureSpan').html('');
+		for(var i =0; i < allChecked.length; i++){
+			$('#featureSpan').append(allChecked[i]);
+			if(i < allChecked.length - 1)
+			$('#featureSpan').append(', ');
+			else
+			$('#featureSpan').append(' ');
+
+		}
+	});
+	
+	
+</script>
+</body>
+</html>

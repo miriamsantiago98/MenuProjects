@@ -1,0 +1,133 @@
+body {
+background-color: #F9EBEA ;
+  
+}
+
+.imgRedonda {
+    width:250px;
+    height:250px;
+    border-radius:200px;
+    border:3px solid #666;
+    justify-content: center;
+}
+
+
+div.menu{
+
+    color: white;
+    font-size: 18px;
+    height: 70px;
+    background-size: cover;
+    font-style: oblique;
+    background-color:#7B241C  ;
+    margin-left: 30px;
+}
+ul.horizontal {  
+    text-align: center;
+    margin:0;
+    padding:50;
+}
+ul.horizontal li {
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+.redes{
+    margin-left: 45%;
+    letter-spacing: 10px;
+}
+
+nav{
+    background-color: #DBA108;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+
+
+ul li a{
+    display: inline-block; 
+    text-decoration: none;
+    color: white;
+}
+
+ul li{
+    display: inline-block; 
+    list-style: none;
+    margin: 0px 20px;
+}
+
+
+/* Body */
+.titulos{
+    background-image: url(../img/conte.jpg);
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    font-style: italic;
+    color: #1C2833 ;
+}
+.sub{
+     font-style:oblique;
+    color: #1C2833 ;
+    justify-content: center;
+}
+.sub2{
+     font-style:oblique;
+    color: #1C2833 ;
+}
+.sub3{
+     font-style:oblique;
+    color: #1C2833 ;
+}
+.sub4{
+     font-style:oblique;
+    color: #1C2833 ;
+}
+.tex1{
+    font-style:oblique;
+    color: #1C2833 ;
+}
+.buton{
+    background-color: #7B241C ;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: 0px solid #202020;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color .4 linear ;
+}
+
+
+
+.boton{
+    background-color: white ;
+    color: #202020;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #202020;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color .4 linear ;
+}
+
+.campo{
+    display: inline-flex;
+    width: 300px;
+    height: 50px;
+
+}
+
+/* Pie de pagina */
+footer{
+    background-color: #7B241C;
+}
+
+.pie{
+    padding-top: 10px;
+    padding-left: 40%;
+    background-color: #7B241C;
+    color: white;
+    display: flex;
+    
+}

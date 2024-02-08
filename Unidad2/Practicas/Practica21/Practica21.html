@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cálculo de multiplos</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script type="text/javascript">
+			
+					var inicial = Number(prompt("Introduce el Numero inicial (Positivo)"))
+			do{
+				var final = Number(prompt("Introduce el Numero final (Positivo)"))
+			}while (final < inicial)
+
+			cadena   = 'inicial '+ inicial
+			cadena   += '<br>final '  + final
+
+			document.write(cadena)
+
+			var multiplo = Number(prompt("Introduce el multiplo que desea conocer"))
+			document.write('<br> multiplo de '+multiplo)
+
+			for(var i = inicial; i>= inicial && i<=final; i++){
+
+				if(i % multiplo == 0){
+					document.write('<br>'+i)
+				}
+			}
+			
+
+		
+			</script>
+
+</body>
+</html>

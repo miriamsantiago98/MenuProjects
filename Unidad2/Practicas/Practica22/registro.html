@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+    <title>Manejo del DOM</title>
+	<!-- Crear el acceso a la hoja de estilos -->
+	<link rel="stylesheet" href="comun/css/estilo-p12.css" />
+</head>
+<body>
+<main class="contenedor" role="main">
+	<h2>Aspirantes a incrementar nivel</h2>
+		
+	<!-- Crear el FORMULARIO -->	
+	<form action="mostrar.html">
+		<fieldset>
+			<h2 class="titulo">Registro</h2>
+
+			<div class="campos">
+				<p class="renglon">
+					<label>Nombre:</label><input type="text" id="nombre" class="campo-largo" /></p>
+
+				<!-- CORREO y Cuadro de TEXTO -->
+
+				<label>Correo:</label><input type="email" id="correo" placeholder="nombre@dominio.com" class="campo-largo"/></p>
+
+				<!-- RFC y Cuadro de TEXTO -->
+
+				<label>RFC:</label><input type="text" id="rfc" class="campo-largo"/></p>
+
+				<!-- AÑO DE INGRESO y Cuadro de TEXTO -->
+				<label>Año ingreso:</label><input type="text" id="ingreso" class="campo"/></p>
+
+				<!-- AÑO DE NACIMIENTO y Cuadro de TEXTO -->
+				<label>Año nacimiento:</label><input type="text" id="nacimiento" class="campo"/></p>
+				
+			</div>
+		</fieldset>
+		
+		<p class="btn-lugar"><!-- Botón de GUARDAR -->
+			
+			<input class="boton" id="guardar" type="submit" />
+		</p>
+		<script> accion()</script>
+	</form>
+	<script type="text/javascript" src="comun/js/script-p12.js"></script>
+</main>
+</body>
+</html>

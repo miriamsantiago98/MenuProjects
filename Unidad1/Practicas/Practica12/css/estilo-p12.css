@@ -1,0 +1,128 @@
+body {
+    /*Formatos de prueba que se pueden modificar */
+    background: #17202A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.jumbotron{
+    text-align: right;
+    background-image: url(../img/nrus.jpg);
+    margin-top: 0px;
+    background-size: cover;
+    height: 300px;
+    color:#F1C40F ;
+}
+.jumbotron h1{
+    font-style: normal;
+}
+div.subte{
+     font-size: 18px;
+    height: 100px;
+    color: #CACFD2  ;
+    background-size: cover;
+    font-family:initial;
+    font-style: unset;
+    text-align: center;
+    margin-left: 30px;
+}
+#main-container{
+    color: black;
+    margin: 80px auto;
+    width: 600px;
+}
+table{
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    padding: 5px;
+}
+
+thead{
+    background-color: orange;
+    border-bottom: solid 5px #0F362D;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+section{
+    margin-bottom: 20px;
+}
+
+section h2{
+    font-size: 25px;
+    text-align: center;
+    font-style: oblique;
+    color: #F1C40F ;
+}
+
+section p{
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+div.subte2{
+     font-size: 18px;
+    height: 100px;
+    color: #CACFD2  ;
+    background-size: cover;
+    font-family:initial;
+    font-style: unset;
+    text-align: center;
+    margin-left: 30px;
+}
+.til{
+    color: white;
+}
+.sub{
+
+    color:white;
+    text-align: center;
+    margin: 50px, auto;
+    font-family: serif;
+
+}
+.rounded-circle{
+    width:250px;
+    height:200px;
+    border-radius:150px;
+}
+h4{
+     color:white;
+    text-align: center;
+    margin: 50px, auto;
+    font-family: serif;
+}
+.pagination{
+    margin-top: 5px;
+}
+.pagination li a{
+    background-color: orange;
+    color: white;
+
+}
+footer{
+    margin-top: 0px;
+    background-color: #202020;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.card-title{
+    color: black;
+     font-family: serif;
+}
+.card-text{
+     color: black;
+     font-family: serif;
+}
+
+
+.fuente {
+    font-size: 3vw; /* vw significa "viewport width" (1vw=1%  viewport width) */
+}

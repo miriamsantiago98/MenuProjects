@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Trabajadores y Estudiantes</title>
+	<link rel="stylesheet" href="comun/css/estilo-p23.css" />
+	<!-- genera el enlace al framework de jQuery (jquery.min.js) 
+		 la llamada al fremwork puede ser local o al servidor remoto-->
+		 <script src="comun/js/jquery-3.5.1.min.js"></script>
+<body>
+	<p>El trabajador es la persona física que presta sus servicios de manera retribuida a otra persona, a una empresa o a una institución.</p>
+	<p><br></p>
+	<p >
+		<label>Persona: </label>
+		<select id="seleccionar"></select>
+		
+	</p>
+<p></p>
+<table class="tabla">
+	<tr><th colspan="4" class="titulo"><span id="dnombre">-</span></th></tr>
+	<tr><th class="enca">e-mail:</th><td><span id="dmail">-</span></td>
+		<th><span id="trfc">R.F.C.:</span></th><td><span id="drfc">-</span></td></tr>
+	<tr><th class="enca"><span id="tarea">Depto.:</span></th><td><span id="darea">-</span></td>
+		<th><span id="tprom">Promedio:</span></th><td><span id="dprom">-</span></td></tr>
+	<tr><th class="enca">A. Ingreso:</th><td><span id="dingreso">-</span></td>
+		<th>Antigüedad:</th><td><span id="dantigue">-</span></td></tr>
+</table>
+<script>
+	// realiza la llamada al script de jQuery para que al momento de seleccionar un
+	// elemento de la lista desplegable se muestre sus datos en la tabla
+</script>
+	<!-- genera el enlace al archivo script-p23.js -->
+	<script type="text/javascript" src="comun/js/script-p23.js"></script>
+</body>
+</html>
